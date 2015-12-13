@@ -69,6 +69,7 @@ function bp_setup() {
 		'video',
 		'quote',
 		'link',
+		'gallery',
 	) );
 
 	// Set up the WordPress core custom background feature.
@@ -76,6 +77,12 @@ function bp_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+	/**
+	 * Including Theme Hook Alliance (https://github.com/zamoose/themehookalliance).
+	 */
+	include( 'inc/tha-theme-hooks/tha-theme-hooks.php' );
+
 }
 endif; // bp_setup
 add_action( 'after_setup_theme', 'bp_setup' );
@@ -114,7 +121,7 @@ add_action( 'widgets_init', 'bp_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bp_scripts() {
-	wp_enqueue_style( 'bp-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'bp-style', get_template_directory_uri() . '/css/style.css' );
 
 	wp_enqueue_script( 'bp-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

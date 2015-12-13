@@ -1,1 +1,166 @@
 
+body
+  background: linear-gradient(40deg, #618FA8 , #A89A86)
+.site-header
+
+  font-family: 'Bubblegum Sans', serif
+  text-align: center
+  background: linear-gradient(to top, #618FA8 , #A89A86)
+  .site-title
+    text-decoration: none
+    font-size: 5em
+
+    font-weight: 800
+    margin: 20px 0 0 0
+    a:visited, a:hover, a:focus, a:active
+     color: rgb(50,123,163)
+  .site-description
+    font-family: serif
+    font-size: 2em
+
+
+
+
+  //background: #327BA3
+.site-title a
+  text-decoration: none
+
+[id^='post-']
+
+  text-align: center
+  background: lighten(#B8DFF5,5%)
+
+
+footer
+  background: #618FA8
+
+.widget-area a
+  color: #B8DFF5
+
+
+aside
+  background: #A89A86
+
+.widget
+  margin-top: 15px
+
+h2.widget-title
+  background: #5C482E
+  color: #B8DFF5
+  padding: 20px
+
+
+.main-navigation
+
+  text-align: center
+
+
+
+.menu-main-navigation-container > .nav-menu
+  display: flex
+  flex-flow: row
+  justify-content: space-around
+  background: #5C482E
+  color: #B8DFF5
+
+.menu-item
+  color: #B8DFF5
+  padding: 10px
+  flex: 1
+  &:hover
+    background: lighten(#5C482E, 10%)
+  & a
+    color: #B8DFF5
+
+
+
+
+.menu-item > .sub-menu
+  background: #5C482E
+  display: flex
+  flex-flow: column wrap
+  margin-top: 20px
+
+
+.site-content
+  margin-top: 20px
+  @include outer-container
+  a
+    text-decoration: none
+
+.content-area
+  @include span-columns(8)
+
+.widget-area
+  @include span-columns(4)
+
+.type-post
+  padding: 20px
+  .enty-header
+    padding: 10px
+  .entry-content
+    padding: 10px
+  .entry-footer
+    background: rgba(50,123,163,.2)
+    padding: 10px
+    box-shadow: inset 3px 3px 5px rgba(50,123,163,.2),inset -3px -3px 5px  rgba(50,123,163,.2)
+    .cat-links
+      padding: 15px
+      a
+        color: #327BA3
+        text-decoration: none
+
+    .comments-link
+      padding: 15px
+      a
+        color: #327BA3
+        text-decoration: none
+    .edit-link
+      padding: 15px
+      a
+        color: #327BA3
+        text-decoration: none
+    .tags-links
+      padding: 15px
+      a
+        color: #327BA3
+        text-decoration: none
+
+
+
+.widget ul
+  list-style: none
+
+.widget_recent_entries li:before
+    margin-left: -2em
+    margin-right: 1em
+    font-family: "FontAwesome"
+    content: "\f044"
+
+
+
+.widget_recent_comments li:before
+    margin-left: -2em
+    margin-right: 1em
+    font-family: "FontAwesome"
+    content: "\f0e6"
+
+
+.widget_categories li:before
+    margin-left: -2em
+    margin-right: 1em
+    font-family: "FontAwesome"
+    content: "\f02d"
+
+
+.widget_meta li:before
+    margin-left: -2em
+    margin-right: 1em
+    font-family: "FontAwesome"
+    content: "\f10c"
+
+.widget_archive li:before
+  margin-left: -2em
+  margin-right: 1em
+  font-family: "FontAwesome"
+  content: "\f187"
